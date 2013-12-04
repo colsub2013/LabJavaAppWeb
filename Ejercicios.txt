@@ -38,5 +38,5 @@ b. Mapear los campos nombreArcade, companiaArcade, anioEdicion e id_comboEstado 
 
 /WebContent/appWebJSP.jsp
 -------------------------
-c. Agregar dentro del formulario un campo de texto hidden con atributos de nombre "comando" y valor "Insertar" tal que pueda ser recuperado desde AppWebServlet.java   
- 
+c. Implementar código utilizando un condicional de JSTL tal que cuando la lista de objetos con clave 'listaObjetosArcade' proveniente de 
+AppWebServlet está vacía se muestre el mensaje 'No hay datos registrados en la base de datos' 
