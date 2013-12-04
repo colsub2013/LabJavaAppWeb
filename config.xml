@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<database>
+
+  <host>localhost</host>
+
+  <username>root</username>
+
+  <password></password>
+
+  <db>nombredb</db>
+
+</database>
+
+ 
+

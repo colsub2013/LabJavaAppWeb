@@ -1,0 +1,42 @@
+Ejercicio 1 (Se corre con botón derecho en PrimerServlet.java desde vista Navigator -> Debug on server -> Tomcat V7.0 ...)
+-----------
+com.labJava.servlets.PrimerServlet
+----------------------------------
+a. Declarar el servlet "PrimerServlet" utilizando una anotación
+b. Setear un atributo en el request con clave "param1" tal que pueda ser impreso en el html generado en 'primerJSP.jsp'
+
+/WebContent/primerJSP.jsp
+-------------------------
+c. Imprimir utilizando tags de JSTL las propiedades del objeto con clave "primerObjetoBean" enviado en el request del servlet "PrimerServlet" 
+
+
+
+Ejercicio 2 (Se corre con botón derecho en ColoresServlet.java desde vista Navigator -> Debug on server -> Tomcat V7.0 ...)
+-----------
+Involucra archivos:
+com.labJavaColores.servlets.ColoresServlet
+/WebContent/colores/colores.jsp
+/WebContent/css/color_.css
+/WebContent/css/color_azul.css
+/WebContent/css/color_rojo.css
+/WebContent/css/color_verde.css
+
+Modificar la etiqueta de carga de archivos css (<link ...>) en 'colores.jsp' utilizando 'Expression Language' de JSTL tal de cargar el archivo css
+adecuado en base a la elección de colores hecha en el combo de dicho archivo JSP
+
+
+
+Ejercicio 3 (Se corre con botón derecho en AppWebServlet.java desde vista Navigator -> Debug on server -> Tomcat V7.0 ...)
+-----------
+com.labJava.dao.ComboEstadoDAO.recuperarObjetoCombo(int id)
+----------------------------------------------------------- 
+a. Agregar la consulta SQL necesaria tal de poder recobrar el objeto ComboEstadoBean indicado por la id que se pasa como argumento del método
+
+com.labJava.dao.JuegoArcadeDAO.agregar(...)
+-------------------------------------------
+b. Mapear los campos nombreArcade, companiaArcade, anioEdicion e id_comboEstado tal de poder realizar la inserción de registros
+
+/WebContent/appWebJSP.jsp
+-------------------------
+c. Agregar dentro del formulario un campo de texto hidden con atributos de nombre "comando" y valor "Insertar" tal que pueda ser recuperado desde AppWebServlet.java   
+ 

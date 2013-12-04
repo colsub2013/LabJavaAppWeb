@@ -1,0 +1,9 @@
+Para importar las tablas:
+
+- Copiar archivo LabJavaAppWeb/juegoarcade.sql a c:\labJava2013\MySQL Server 5.6\bin
+
+- Ejecutar
+
+c:\labJava2013\MySQL Server 5.6\bin>mysql -u root nombreDB < juegoarcade.sql
+
+c:\labJava2013\MySQL Server 5.6\bin>mysql -u root -p nombreDB < juegoarcade.sql
