@@ -103,7 +103,7 @@ $(document).ready(function(){
 				<hr>
 			</div>			
 			<div class="form-actions">
-				<%-- Agregar código para Ejercicio 3.c --%>
+				<input type="hidden" name="comando" id="Insertar" value="Insertar" />
 				<button type="submit" class="btn btn-primary btn-large">Agregar</button>
 				<button type="reset" class="btn">Cancelar</button>
 			</div>
@@ -126,25 +126,17 @@ $(document).ready(function(){
 				<td><b>Estado</b></td>			
 			</tr>
 			</thead>
-			<c:choose>
-				<c:when test="${not empty requestScope['listaObjetosArcade']}">
-					<c:forEach var="objetoArcade" items="${requestScope['listaObjetosArcade']}">
-						<tr>
-							<td><a href="/LabJavaAppWeb/AppWebServlet?comando=Borrar&id=<c:out value="${objetoArcade.id_juegoArcade}"/>">Borrar</a></td>
-							<td><c:out value="${objetoArcade.id_juegoArcade}" /></td>
-							<td><c:out value="${objetoArcade.nombreArcade}" /></td>
-					 		<td><c:out value="${objetoArcade.companiaArcade}" /></td>
-							<td><c:out value="${objetoArcade.anioEdicion}" /></td>
-							<td><c:out value="${objetoArcade.comboEstadoBean.descComboEstado}" /></td>			
-						</tr>
-					</c:forEach>
-				</c:when>
-				<c:otherwise>
+				<%-- Implementar código para Ejercicio 3.c --%>
+				<c:forEach var="objetoArcade" items="${requestScope['listaObjetosArcade']}">
 					<tr>
-						<td>No hay datos registrados en la base de datos</td>
-					</tr>			
-				</c:otherwise>
-			</c:choose>			
+						<td><a href="/LabJavaAppWeb/AppWebServlet?comando=Borrar&id=<c:out value="${objetoArcade.id_juegoArcade}"/>">Borrar</a></td>
+						<td><c:out value="${objetoArcade.id_juegoArcade}" /></td>
+						<td><c:out value="${objetoArcade.nombreArcade}" /></td>
+				 		<td><c:out value="${objetoArcade.companiaArcade}" /></td>
+						<td><c:out value="${objetoArcade.anioEdicion}" /></td>
+						<td><c:out value="${objetoArcade.comboEstadoBean.descComboEstado}" /></td>			
+					</tr>
+				</c:forEach>
 		</table>
 	</fieldset>
 </div>	
